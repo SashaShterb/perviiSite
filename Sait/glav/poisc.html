@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="glav.css"/>
+	<link rel="shortcut icon" href="image\logo.png">
+	<script type="text/javascript" src="poisc.js"></script>
+	<title>SterGames - база компьютерных игр</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+
+	.table{
+		display: table;
+		background-color: white;
+		width: 1000px;
+		height: auto;
+		margin-left: 150px;
+	}
+
+	.row{
+		display: table-row;
+		margin-bottom: 10px;
+		height: 183px;
+	}
+
+	.cell{
+		display: table-cell;
+		height: 183px;
+	}
+
+	.kartinka{
+		width: 326px;
+		height: 183px;
+	}
+
+	.otenocika{
+		width: 183px;
+		height: 100%;
+		background-color: green;
+		color: white;
+		font-size: 30px;
+		font-weight: bold; 
+		text-align: center;
+		vertical-align: middle;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.nomer{
+		background-color: pink;
+		width: 100px;
+		height: 183px;
+		color: white;
+		font-size: 30px;
+		font-weight: bold; 
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.opisanie{
+		width: 391px;
+		background-color: #31373F;
+		height: 100%;
+		color: white;
+		text-shadow: 1px 2px 3px black;
+		padding: 20px;
+		font-size: 20px;
+		}
+
+	</style>
+
+</head>
+
+<body onload="poisc('vse')">
+	<div class="header">
+		<div class="logo"></div>
+		<div class="title"><a href="glav.html">SterGames</a></div>
+		<div style="background-image: url('image\\poisc.png'); width: 50px; height: 50px; background-size: 100%; left: 400px; position: absolute; top: 10px;"></div>
+		<input type="text" name="poisc" placeholder="Поиск..." style="position: absolute; left: 450px; height: 35px; top: 16px; width: 800px; font-size: 18px; border:none; padding-left: 10px;" />
+	</div>
+
+
+<div id="boc" class="boc-menu">
+    <div class="zagolovoc">ЖАНР</div>
+
+    	<div class="probel"></div>
+    	<button class="janre" onclick="poisc('vse')">Все</button>
+		
+		<button class="button" type="button" onclick="functie1()"><span id="button1">+</span></button>
+		<button class="janre" onclick="poisc('action')">Экшен</button>
+
+		<div id="none" class="none-action">
+			<div class="probel"></div>
+	    	<button  class="podjanre">Шутер</button>
+
+	    	<div class="probel"></div>
+	    	<button  class="podjanre">Хоррор</button>
+
+	    	<div class="probel"></div>
+	    	<button  class="podjanre">Слэшер</button>
+
+	    	<div class="probel"></div>
+	    	<button  class="podjanre">Стелс-экшен</button>
+    	</div>
+
+    	<div class="probel"></div>
+    	<button class="janre" onclick="poisc('adventure')">Приключение</button>
+
+    	<button class="button" type="button" onclick="functie2()"><span id="button2">+</span></button>
+		<button class="janre" onclick="poisc('rpg')">РПГ</button>
+
+		<div id="none2" class="none-rpg">
+			<div class="probel"></div>
+	    	<button  class="podjanre">Экшен-РПГ</button>
+
+	    	<div class="probel"></div>
+	    	<button  class="podjanre">ММОРПГ</button>
+	    </div>
+
+	     <div class="probel"></div>
+    	<button class="janre" onclick="poisc('gonki')">Гонки</button>
+
+    	<button class="button" type="button" onclick="functie3()"><span id="button3">+</span></button>
+		<button class="janre" onclick="poisc('strategy')">Стратегия</button>
+
+		<div id="none3" class="none-strategy">
+			<div class="probel"></div>
+	    	<button class="podjanre">В реальном времени</button >
+
+	    	<div class="probel"></div>
+	    	<button class="podjanre">Пошаговая</button >
+
+	    	<div class="probel"></div>
+	    	<button class="podjanre">Экономическая</button >
+	    </div>
+
+	    <div class="probel"></div>
+    	<button class="janre" onclick="poisc('sim')">Симулятор</button>
+
+	    <div class="probel"></div>
+    	<button class="janre" onclick="poisc('arcade')">Аркада</button>
+
+    	<div class="probel"></div>
+    	<button class="janre" onclick="poisc('gol')">Головоломка</button>
+
+    	<div class="probel"></div>
+    	<button class="janre" onclick="poisc('sport')">Спорт</button>
+
+    	<div class="probel"></div>
+    	<button class="janre" onclick="poisc('fight')">Файтинг</button>
+</div>
+
+
+
+
+<div class="block" style="height: auto; padding-bottom: 50px;">
+
+	<div class="menu">
+		<a href="glav.html"><div class="glav">Главая</div></a>
+		<a href="poisc.html"><div class="best"  style="background-color: white; color: black;">Лучшие игры</div></a>
+		<a href="novoe.html"><div class="new">Новые игры</div></a>
+		<a href="grafic.html"><div class="grafic">График выхода игр</div></a>
+	</div>
+
+<div id="tableCont"></div>
+
+</div>
+
+<div class="footer">
+	<a href="forma.html">Написать нам</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+setTimeout("document.getElementById('souls').style.zIndex = '1';", 200);
+
+<select id="aleg">
+  <option value="barbat">Мужской</option>
+  <option value="femeie">Женский</option>
+</select>
+
+<label>

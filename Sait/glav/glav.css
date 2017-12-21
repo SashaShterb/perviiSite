@@ -1,0 +1,202 @@
+body{
+	margin: 0;
+	background-image: url("image\\kosmos.jpg");
+	font-family: "Arial", sans-serif;
+}
+
+.logo{
+	height: 34px;
+	width: 34px;
+	background-image: url("image\\logo.png");
+	background-size: 35px 35px;
+	float: left;
+	margin: 18px 0px 18px 100px;
+}
+
+.header{
+	margin: 0px;
+	height: 70px;
+	width: 1920px;
+	background-color: #4B5762;
+	border-bottom: 2px solid #A8CAE1;
+}
+
+.title{
+	margin: 20px 0px;
+	float: left;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.title a{
+	text-decoration: none; 
+	color: white; 
+	text-shadow: 5px 5px 15px black;
+	transition: text-shadow 0.3s;
+	-webkit-transition: text-shadow 0.3s;
+	}
+
+.title a:hover{
+	transition: text-shadow 0.3s;
+	-webkit-transition: text-shadow 0.3s;
+	text-shadow: 5px 5px 1px black;
+}
+
+.menu {
+	height: 50px;
+	width: 900px;
+	margin: 100px auto 50px;
+	background-color: #121B26;
+	font-family: "Arial", sans-serif;
+	padding-left: 400px;
+}
+
+.glav, .best, .new, .grafic{
+	float: left;
+	height: 12px;
+	text-align: center;
+	padding: 19px;
+	border-top-right-radius: 10px; border-top-left-radius: 10px;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s background-color;
+}
+
+.glav:hover, .best:hover, .new:hover, .grafic:hover{
+	background-color: red;
+	transition: 0s background-color;
+}
+
+.block {
+	height: 1800px;
+	width: 1300px;
+	margin: 100px 200px;
+	margin-bottom: 0px;
+	background-color: white;
+	box-shadow: 1px 2px 10px;
+}
+
+.boc-menu{
+	margin-top: 200px;
+	float: left;
+	background-color: white;
+	height: 365px;
+	width: 220px;
+	box-shadow: 1px 2px 10px;
+	padding: 5px;
+	border-top-right-radius: 10px;
+}
+
+.button{
+	border: 0px;
+	background-color: white;
+	margin: 5px;
+	float: left;
+	width: 20px;
+}
+
+.zagolovoc{
+	background-color: #77DD77;
+	padding: 5px;
+	text-align: center;
+}
+
+.janre{
+	height: 20px;
+	width: 180px;
+	color: black;
+	margin: 5px;
+	float: left;
+	text-align: left;
+}
+
+
+.probel{
+	width: 20px;
+	height: 20px;
+	float: left;
+
+	margin: 5px;
+}
+
+.none-action{
+	display: none;
+	height: 10px;
+}
+
+.none-rpg{
+	display: none;
+	height: 10px;
+}
+
+.none-strategy{
+	display: none;
+	height: 10px;
+}
+
+.podjanre{
+	height: 20px;
+	width: 180px;
+	color: black;
+	margin: 5px;
+	float: left;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.boc-menu button{
+	border-width: 0px;
+	background-color: white;
+	font-size: 15px;
+}
+
+.boc-menu button:active{
+	background-color: red;
+}
+
+.footer{
+	width: 1300px;
+	height: 100px;
+	background-color: #121B26;
+	margin: 0px 200px 100px;
+	box-shadow: 1px 2px 10px;
+	line-height: 100px;
+}
+
+.footer a{
+	margin-left: 70px;
+	text-decoration: none;
+	color: white;
+}
+
+.janre:hover, .podjanre:hover{
+	color: red;
+}
+
+button, button:active, button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1366px) {
+
+.row::after {    content: "";     clear: both;     display: table; }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
